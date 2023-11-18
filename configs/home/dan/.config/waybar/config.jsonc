@@ -1,0 +1,31 @@
+{
+	"position": "top",
+	"layer": "top",
+
+	"include": [
+		"~/.config/waybar/modules.jsonc"
+	],
+
+	"modules-left": [
+		"custom/apps",
+		"clock", 
+		"custom/weather", 
+		"hyprland/workspaces",
+		"hyprland/window"
+	],
+
+	"modules-right": [
+		"tray", 		
+		
+		"temperature",
+		"cpu", 
+		"memory", 
+		"custom/storage",
+		"network",
+		
+		"custom/pacman",  
+		"backlight",
+		"pulseaudio",
+		"battery" 
+	]
+}

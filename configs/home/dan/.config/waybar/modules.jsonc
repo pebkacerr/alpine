@@ -1,0 +1,119 @@
+{
+	"custom/apps": {
+		"format": "  Apps",
+		"on-click": "~/.config/waybar/scripts/launch.sh",
+		"exec-on-event": false,
+		"escape": true
+	},
+
+	"clock": {
+		"format": "{:  %a  <b>%d %b</b>  %H:%M}",
+		"interval": 1,
+		"tooltip": false
+	},
+	
+	"custom/weather": {
+		"format": "{}",
+		"format-alt": "{alt}: {}",
+		"format-alt-click": "click-right",
+		"interval": 1800,
+		"return-type": "json",
+		"exec": "~/.config/waybar/scripts/weather.sh",
+		"exec-if": "ping wttr.in -c1"
+	},
+	
+	"hyprland/workspaces": {
+		"on-click": "activate"
+	},
+	
+	"hyprland/window": {
+		"format": "{title}",
+		"separate-outputs": true
+	},
+	
+	"tray": {
+		"icon-size": 16,
+		"spacing": 12
+	},
+	
+	"custom/pacman": {
+		"format": " {:2}",
+		"interval": 3600,
+		"return-type": "json",
+		"exec": "~/.config/waybar/scripts/updates.sh"
+	},
+	
+	"cpu": {
+		"format": " {usage:2}% ",
+		"tooltip": true,
+		"interval": 1,
+		"on-click": "kitty btop"
+	},
+	
+	"memory": {
+		"format": " {:2}% ",
+		"tooltip": true,
+		"interval": 1,
+		"on-click": "kitty btop"
+	},
+	
+	"custom/storage": {
+		"format": " {:3}",
+		"format-alt": " {alt:3}",
+		"return-type": "json",
+		"interval": 180,
+		"exec": "~/.config/waybar/scripts/storage.sh"
+	},
+
+	"network": {
+		"format": " {bandwidthDownBytes:>}",
+		"format-alt": " {bandwidthUpBytes:>}",
+		"interval": 3,
+		"min-length": 9,
+		"tooltip": false
+	},
+
+	"temperature": {
+		"thermal-zone": 1,
+		"critical-threshold": 80,
+		"format": "{icon} {temperatureC:2}°C",
+		"format-icons": ["", "", ""],
+		"on-click": "kitty btop"
+	},
+	
+	"backlight": {
+		"device": "intel_backlight",
+		"format": "{icon} {percent:2}%",
+		"format-icons": ["", ""]
+	},
+	
+	"pulseaudio": {
+		"format": "{icon} {volume:3}%",
+		"format-bluetooth": "{icon} {volume:3}%",
+		"format-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"default": ["", "", "", ""]
+		},
+		"scroll-step": 1,
+		"on-click": "pavucontrol"
+	},
+
+	"battery": {
+		"states": {
+			"good": 90,
+			"warning": 35,
+			"critical": 15
+		},
+		"interval": 30,
+		"format": "{icon} {capacity:2}%",
+		"format-time": "{H}h {}m",
+		"format-charging": " {capacity:2}%",
+		"format-plugged": " {capacity:2}%",
+		"format-alt": "{icon} {time:2}",
+		"format-icons": ["", "", "", "", ""]
+	}
+}
+

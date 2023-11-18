@@ -1,0 +1,17 @@
+show=drun
+width=20%
+height=50%
+prompt=Search
+normal_window=true
+allow_images=true
+term=kitty
+hide_scroll=true
+insensitive=true
+no_actions=true
+columns=1
+sort_order=alphabetical
+gtk_dark=true
+image_size=24
+line_wrap=word
+single_click=true
+

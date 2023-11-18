@@ -1,0 +1,37 @@
+/* https://www.nordtheme.com/docs/colors-and-palettes */
+
+/* Polar Night */
+@define-color polar1	#2e3440;
+@define-color polar2	#3b4252;
+@define-color polar3	#434c5e;
+@define-color polar4	#4c566a;
+
+/* Snow Run */
+@define-color snow1	#d8dee9;
+@define-color snow2	#e5e9f0;
+@define-color snow3	#eceff4;
+
+/* Frost */
+@define-color frost1 	#8fbcbb;
+@define-color frost2	#88c0d0;
+@define-color frost3	#81a1c1;
+@define-color frost4	#5e81ac;
+
+/* Aurora */
+@define-color aurora1	#bf616a;
+@define-color aurora2	#d08770;
+@define-color aurora3	#ebcb8b;
+@define-color aurora4	#a3be8c;
+@define-color aurora5	#b48ead;
+
+
+/* Theme colors */
+
+@define-color background-color1			rgba(0, 0, 0, 0.7);
+@define-color background-color2			transparent;
+@define-color background-color3			transparent;
+@define-color foreground-color1			@snow3;
+@define-color foreground-color2			@polar2;
+@define-color border-color				@polar4;
+@define-color shadow-color1				@polar1;
+@define-color shadow-color2				@snow2;
